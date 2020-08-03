@@ -8,7 +8,10 @@
     <string name="app_name">Material QR</string>
     <string name="generate_btn">Generate</string>
     <string name="empty_input_error">Input cannot be empty.</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Camera</string>
-    <string name="title_notifications">About</string>
+    <string name="about">
+
+    </string>
+    <string name="title_create">Create</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_about">About</string>
 </resources>
