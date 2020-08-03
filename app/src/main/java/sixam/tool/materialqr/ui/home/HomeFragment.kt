@@ -10,12 +10,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import sixam.tool.materialqr.R
-import net.glxn.qrgen.android.QRCode
+import sixam.tool.materialqr.common.QrGenerator
 
 class HomeFragment : Fragment() {
 
@@ -26,6 +29,8 @@ class HomeFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
+
+
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
@@ -44,10 +49,10 @@ class HomeFragment : Fragment() {
 
                     return@setOnClickListener
                 }
+                val qrGen = QrGenerator(text)
+                val previewImg = qrGen.generate(1000,1000)
 
-                val qr = QRCode.from(text)
-                val previewQR = qr.withSize(1000,1000).bitmap()
-                qrPreview.setImageBitmap(previewQR)
+                qrPreview.setImageBitmap(previewImg)
             }
         })
         return root
