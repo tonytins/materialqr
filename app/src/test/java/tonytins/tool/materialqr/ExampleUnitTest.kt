@@ -4,7 +4,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-package sixam.tool.materialqr
+package tonytins.tool.materialqr
 
 import org.junit.Test
 

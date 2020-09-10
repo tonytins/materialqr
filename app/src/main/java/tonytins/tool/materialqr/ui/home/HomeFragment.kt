@@ -4,7 +4,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-package sixam.tool.materialqr.ui.home
+package tonytins.tool.materialqr.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -17,8 +17,8 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import sixam.tool.materialqr.R
-import sixam.tool.materialqr.common.QrGenerator
+import tonytins.tool.materialqr.R
+import tonytins.tool.materialqr.common.QrGenerator
 
 class HomeFragment : Fragment() {
 

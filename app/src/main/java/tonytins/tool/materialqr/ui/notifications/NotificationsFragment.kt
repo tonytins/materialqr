@@ -4,7 +4,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-package sixam.tool.materialqr.ui.notifications
+package tonytins.tool.materialqr.ui.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,7 +14,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import sixam.tool.materialqr.R
+import tonytins.tool.materialqr.R
 
 class NotificationsFragment : Fragment() {
 

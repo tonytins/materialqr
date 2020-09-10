@@ -4,7 +4,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-package sixam.tool.materialqr.common
+package tonytins.tool.materialqr.common
 
 import android.graphics.Bitmap
 import net.glxn.qrgen.android.QRCode
